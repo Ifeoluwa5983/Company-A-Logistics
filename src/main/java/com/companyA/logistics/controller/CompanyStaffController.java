@@ -3,7 +3,7 @@ package com.companyA.logistics.controller;
 import com.companyA.logistics.dto.CreateCompanyStaff;
 import com.companyA.logistics.exception.CompanyAException;
 import com.companyA.logistics.response.ResponseDetails;
-import com.companyA.logistics.service.CompanyStaffServiceImpl;
+import com.companyA.logistics.service.CompanyStaffServiceImplementation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -18,11 +18,11 @@ import java.time.LocalDateTime;
 
 @Slf4j
 @RestController
-@RequestMapping("/api/v1/user")
+@RequestMapping("/api/v1/users")
 public class CompanyStaffController {
 
     @Autowired
-    CompanyStaffServiceImpl companyStaffService;
+    CompanyStaffServiceImplementation companyStaffService;
 
     @PostMapping("/")
     public ResponseEntity<?> registerUser(@Valid @RequestBody CreateCompanyStaff applicationUser) throws CompanyAException {

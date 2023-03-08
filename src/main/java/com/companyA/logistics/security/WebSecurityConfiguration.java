@@ -33,7 +33,7 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
         http.cors()
                 .configurationSource(corsConfigurationSource()).and().csrf().disable()
                 .authorizeRequests()
-                .antMatchers(HttpMethod.POST, "/api/v1/user/").permitAll()
+                .antMatchers(HttpMethod.POST, "/api/v1/users/").permitAll()
                 .antMatchers("/v2/api-docs", "/configuration/**", "/swagger*/**", "/webjars/**")
                 .permitAll()
                 .anyRequest().authenticated()
