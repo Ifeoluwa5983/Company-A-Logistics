@@ -1,8 +1,8 @@
-##CompanyA Logistics
+# CompanyA Logistics
 
 CompanyA Logistics is a simple implementation of a logistics system built using Java and Spring Boot and Postgres Database.
 
-#Prerequisites
+# Prerequisites
 
 In order to run this application you need to install two tools: jdb & maven.
 
