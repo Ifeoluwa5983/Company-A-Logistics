@@ -24,4 +24,8 @@ public class DeliveryLocation {
     private String state;
 
     private String country;
+
+    private String modifiedDate;
+
+    private String createdDate;
 }
